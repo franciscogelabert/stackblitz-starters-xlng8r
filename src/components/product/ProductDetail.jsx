@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../style.css';
+import { IconHeartFilled } from '@tabler/icons-react';
 
 const productos = [
   {
@@ -112,6 +113,19 @@ const ProductDetail = () => {
               alt={item.alt}
             />
           </a>
+          <div className="card-body">
+            <p className="card-text align-middle">
+              {' '}
+              {item.descripcion}
+              <a href="404.html" className="card-link">
+                Ver más...{' '}
+              </a>
+            </p>
+            <p className="textLike">{item.tema}</p>
+            <a href="404.html" Title="Me Gusta">
+              <IconHeartFilled color="red" size={32} />
+            </a>
+          </div>
         </div>
       ))}
     </>
