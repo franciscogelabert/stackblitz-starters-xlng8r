@@ -120,7 +120,7 @@ const ProductDetail = () => {
               <p className="card-text align-middle">
                 {' '}
                 {item.descripcion}
-                <a href="404.html" className="card-link">
+                <a href="404.html" className="textAmpliar">
                   Ver más...{' '}
                 </a>
               </p>
@@ -128,6 +128,7 @@ const ProductDetail = () => {
               <IconHeart color="red" size={32} />
               <IconMessage size={32} />
               <IconShare size={32} />
+              <p> Precio ${item.megusta} </p>
             </div>
           </div>
         </article>

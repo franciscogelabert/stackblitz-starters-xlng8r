@@ -242,5 +242,31 @@ ul li a:hover {
   transition: all 1s;
 }
 
+/* formato a los likes de las publicaciones */
+.textLike {
+  margin-top: 0px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color:blue;
+  text-decoration: none;
+}
+.textAmpliar {
+  margin-top: 0px;
+  font-size: 1em;
+  font-weight: bold;
+  color:blue;
+  text-decoration: none;
+}
+
+/* márgenes de los trextos */
+p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+
 
 
