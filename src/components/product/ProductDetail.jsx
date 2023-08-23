@@ -15,6 +15,7 @@ const productos = [
       '@Yo El momento ideal para desconectarse es cuando llegan los amigos a casa, y una picada es el condimento indispensable para una juntada increíble. Pero hay que prepararlo con tiempo para que en la mesa no falte este rico.',
     tema: '#picada #fiambre #quesos',
     megusta: 125,
+    precio: 1325
   },
 
   {
@@ -27,6 +28,7 @@ const productos = [
       '@Yo Uno de los grandes placeres en la cocina que estoy descubriendo desde hace un tiempo es el de preparar tus masas caseras, para todo tipo de preparaciones. Tal es mi afición que en la sección de masas',
     tema: '#pancasero #masamadre',
     megusta: 198,
+    precio: 3425
   },
 
   {
@@ -39,6 +41,7 @@ const productos = [
       '@Yo ¿Es época de mandarinas y tienes una licuadora cerca? A cocinar se ha dicho, si tienes estas dos cosas a mano y dos o tres ingredientes mas podes hacer una super torta de mandarina en licuadora. Hoy te ',
     tema: '#mandarina #torta ',
     megusta: 230,
+    precio: 4365
   },
 
   {
@@ -51,6 +54,7 @@ const productos = [
       '@Yo No van a poder creer lo que son estos mini pan dulce! Receta de pan dulce en formato mini y de esfuerzo mini! Porque éste pan dulce se hace en media hora. Hoy vamos a aprender a cocinar un pan dulce rico, con muchas frutas',
     tema: '#pandulce #navidad',
     megusta: 361,
+    precio: 6784
   },
 
   {
@@ -63,6 +67,7 @@ const productos = [
       '@Yo Me puse a leer un poquito acerca de su historia, donde surgió exactamente y encontré un montón de versiones… Resulta que sí, los italianos reclamaron su autoría en la receta dado que este tipo de pan saborizado tan particular ',
     tema: '#focaccia #italia',
     megusta: 500,
+    precio: 2744
   },
 
   {
@@ -75,6 +80,7 @@ const productos = [
       '@Yo El plato estrella a la hora de hablar de recetas económicas y ricas. Encima es facilísima, no pueden pedir nada más. Lo ideal, y para que este pan de carne sea mucho más rico,sería que tengas El plato estrella a la hora de hablar de',
     tema: '#carne #carnehorno ',
     megusta: 421,
+    precio: 2734
   },
 
   {
@@ -87,6 +93,7 @@ const productos = [
       '@Yo Baklava es un pastel elaborado con una pasta de  pistachos o nueces trituradas, distribuida en una masa filo y bañado en almíbar o jarabe de miel. Existen diversas variedades que incorporan avellanas y almendras',
     tema: '#baklava #postreturco',
     megusta: 548,
+    precio: 1734
   },
 
   {
@@ -99,6 +106,7 @@ const productos = [
       '@Yo Un simple bizcochuelo ya no es suficiente una vez que conozcas esta esponjosa torta de Kinder Bueno. Batir los huevos con el azúcar, añadir la harina, la levadura en polvo y la vainilla, a',
     tema: '#torta #kinder ',
     megusta: 256,
+    precio: 8765
   },
 ];
 
@@ -128,7 +136,7 @@ const ProductDetail = () => {
               <IconHeart color="red" size={32} />
               <IconMessage size={32} />
               <IconShare size={32} />
-              <p> Precio ${item.megusta} </p>
+              <p> Precio $ {item.precio} </p>
             </div>
           </div>
         </article>
