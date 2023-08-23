@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../style.css';
-import { IconHeartFilled } from '@tabler/icons-react';
+import { IconHeart } from '@tabler/icons-react';
+import { IconMessage } from '@tabler/icons-react';
+import { IconShare } from '@tabler/icons-react';
 
 const productos = [
   {
@@ -104,29 +106,31 @@ const ProductDetail = () => {
   return (
     <>
       {productos.map((item, i) => (
-        <div key={i} className="card gradiente">
-          <h3>{item.titulo}</h3>
-          <a href="404.html">
-            <img
-              src={item.ubicacion}
-              className="imagenReceta card-img-top w-100 mx-auto p-2"
-              alt={item.alt}
-            />
-          </a>
-          <div className="card-body">
-            <p className="card-text align-middle">
-              {' '}
-              {item.descripcion}
-              <a href="404.html" className="card-link">
-                Ver más...{' '}
-              </a>
-            </p>
-            <p className="textLike">{item.tema}</p>
-            <a href="404.html" Title="Me Gusta">
-              <IconHeartFilled color="red" size={32} />
+        <article key={i} className="col-sm-12 col-md-6 col-lg-3">
+          <div className="card gradiente">
+            <h3>{item.titulo}</h3>
+            <a href="404.html">
+              <img
+                src={item.ubicacion}
+                className="imagenReceta card-img-top w-100 mx-auto p-2"
+                alt={item.alt}
+              />
             </a>
+            <div className="card-body">
+              <p className="card-text align-middle">
+                {' '}
+                {item.descripcion}
+                <a href="404.html" className="card-link">
+                  Ver más...{' '}
+                </a>
+              </p>
+              <p className="textLike">{item.tema}</p>
+              <IconHeart color="red" size={32} />
+              <IconMessage size={32} />
+              <IconShare size={32} />
+            </div>
           </div>
-        </div>
+        </article>
       ))}
     </>
   );
